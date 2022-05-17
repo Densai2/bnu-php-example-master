@@ -15,8 +15,6 @@ if (isset($_SESSION['id'])) {
    if (isset($_POST['submit'])) {
 
 
-      // build an sql statment to update the student details
-      // add student sql
     
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
@@ -86,11 +84,6 @@ if (isset($_SESSION['id'])) {
 EOD;
 
 
-// 5. Add a file upload field to the addstudent.php script and implement the PHP code to allow for an
-// image to be uploaded with each new student. If you decide to add a new database column as part
-// of this functionality, ensure you document this in your report. The uploaded image should be
-// displayed on the students.php page against the relevant student record. Higher marks will be
-// awarded for robust implementations will some level of file type validation. 
 
    // render the template
    echo template("templates/default.php", $data);
